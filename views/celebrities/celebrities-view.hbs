@@ -1,0 +1,16 @@
+<h1>This is my celebrities page</h1>
+<div>
+  Name:
+  {{createdCelebrity.name}}
+  Occupation:
+  {{createdCelebrity.occupation}}
+  Catch phrase:
+  {{createdCelebrity.catchPhrase}}
+
+  {{#each foundCelebrities}}
+    Name:
+    {{this.name}}
+    <hr />
+  {{/each}}
+
+</div>

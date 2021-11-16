@@ -1,0 +1,11 @@
+<h2>HEY THIS IS ANOTHER HEADING</h2>
+
+<form action="/movies/create" method="POST">
+  <label>Name: </label>
+  <input type="text" name="name" />
+{{#each }}
+    <select name='cast' multiple>
+        <option value="{{this._id}}" >{{}}</option>
+    </select>
+  <button type="submit">Press me</button>
+</form>
